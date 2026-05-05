@@ -1,0 +1,307 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #fef9e6 0%, #fff4e0 100%);
+			font-family: 'Inter', sans-serif;
+			padding: 2rem 1.5rem;
+			color: #2c3a2b;
+			min-height: 100vh;
+        }
+
+        /* Main Container */
+        .page-wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        .hero-section {
+            background: rgba(255, 248, 225, 0.85);
+			backdrop-filter: blur(2px);
+			border-radius: 3rem;
+			padding: 2rem 2rem 1.5rem;
+			margin-bottom: 2rem;
+			text-align: center;
+			box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+			border: 1px solid rgba(255, 215, 150, 0.6);
+}
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #c25b2e, #e8904a, #f4b942);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: #6b5b3e;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .event-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,215,140,0.3);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            margin-top: 1.2rem;
+            font-weight: 600;
+            color: #8b691b;
+        }
+
+        /* Categories Grid */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Category Cards */
+        .category-card {
+            background: rgba(255, 255, 245, 0.96);
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 15px 35px -12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 40px -15px rgba(0,0,0,0.2);
+        }
+
+        .card-header {
+            padding: 1.8rem 1.5rem;
+            color: white;
+            position: relative;
+        }
+
+        .cat-1 .card-header {
+            background: linear-gradient(135deg, #1e6f5c, #289672);
+        }
+        .cat-2 .card-header {
+            background: linear-gradient(135deg, #2c5282, #3182ce);
+        }
+        .cat-3 .card-header {
+            background: linear-gradient(135deg, #9c4d96, #b565a7);
+        }
+
+        .card-header h2 {
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 0.8rem;
+        }
+
+        .badge-kategori {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.25);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            backdrop-filter: blur(5px);
+        }
+
+        .card-content {
+            padding: 1.8rem;
+        }
+
+        .section-info {
+            margin-bottom: 1.8rem;
+        }
+
+        .section-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-left: 4px solid;
+            padding-left: 12px;
+        }
+
+        .cat-1 .section-info h3 {
+            border-left-color: #1e6f5c;
+        }
+        .cat-2 .section-info h3 {
+            border-left-color: #2c5282;
+        }
+        .cat-3 .section-info h3 {
+            border-left-color: #9c4d96;
+        }
+
+        .section-info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section-info li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #4a5568;
+        }
+
+        .section-info li i {
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+
+        .prize-box {
+            background: #f7f9fc;
+            padding: 1.2rem;
+            border-radius: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .icon-text {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px dashed #e2e8f0;
+        }
+
+        .prize-amount {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #2d3748;
+        }
+
+        .prize-box > div {
+            margin-bottom: 0.6rem;
+            font-size: 0.9rem;
+        }
+
+        .prize-note {
+            margin-top: 1rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #718096;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+			background: rgba(255, 255, 245, 0.96);
+            border-radius: 1rem;
+            margin-top: 2rem;
+            color: #4a5568;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(105deg, #ffdfaa, #ffcf8a);
+            border: none;
+            padding: 0.8rem 1.8rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 80px;
+            color: #4d3217;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            transition: all 0.2s;
+            text-decoration: none;
+			margin-right: 49rem;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+            background: linear-gradient(105deg, #ffd89a, #ffc172);
+        }
+		
+        .daftar-grid {
+            text-align: center;
+}
+
+        .foward-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(105deg, #ffdfaa, #ffcf8a);
+            border: none;
+            padding: 0.8rem 1.8rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 80px;
+            color: #4d3217;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .foward-button:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(105deg, #ffd89a, #ffc172);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .categories-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .card-header h2 {
+                font-size: 1.3rem;
+            }
+            .prize-amount {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .category-card {
+            animation: fadeInUp 0.6s ease backwards;
+        }
+
+        .category-card:nth-child(1) { animation-delay: 0.1s; }
+        .category-card:nth-child(2) { animation-delay: 0.2s; }
+        .category-card:nth-child(3) { animation-delay: 0.3s; }

@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(145deg, #fef9e6 0%, #fff4e0 100%);
+    font-family: 'Inter', sans-serif;
+    padding: 2rem 1.5rem;
+    color: #2c3a2b;
+    min-height: 100vh;
+}
+
+/* main container with elegance */
+.hero-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* header card / event spotlight */
+.event-spotlight {
+    background: rgba(255, 248, 225, 0.85);
+    backdrop-filter: blur(2px);
+    border-radius: 3rem;
+    padding: 2rem 2rem 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 215, 150, 0.6);
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #c25b2e, #e8904a, #f4b942);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.03);
+}
+
+h6 {
+	text-align: center;
+	
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #846c3e;
+    border-top: 1px dashed #f0cf9c;
+    display: inline-block;
+    padding-top: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.info-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+    margin: 1.8rem 0 0.8rem;
+}
+
+.info-chip {
+    background: white;
+    padding: 0.7rem 1.6rem;
+    border-radius: 60px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 6px 12px -8px rgba(0,0,0,0.1);
+    border: 1px solid #ffe2b5;
+    color: #5a3e1f;
+}
+
+.info-chip i {
+    font-size: 1.3rem;
+    font-style: normal;
+}
+
+.address-sub {
+    font-size: 0.9rem;
+    margin-top: 12px;
+    color: #9f7742;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+/* map section modern */
+.map-card {
+    background: #ffffffcc;
+    backdrop-filter: blur(4px);
+    border-radius: 2.5rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 25px 40px -18px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    border: 1px solid #ffefcf;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 45%;
+    height: 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-label {
+    background: #fef5e3;
+    padding: 0.8rem 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    color: #946b30;
+    border-top: 1px solid #ffefcf;
+    font-size: 0.9rem;
+}
+
+/* COUNTDOWN CARD — modern glassmorphism */
+.countdown-card {
+    background: rgba(255, 255, 245, 0.96);
+    backdrop-filter: blur(10px);
+    border-radius: 3rem;
+    padding: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    box-shadow: 0 30px 45px -20px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 215, 140, 0.7);
+    margin-bottom: 2rem;
+}
+
+.event-icon {
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+}
+
+.countdown-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    background: linear-gradient(120deg, #bb5b2c, #e58e3a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.3rem;
+}
+
+.date-badge {
+    background: #fbe5bf;
+    display: inline-block;
+    padding: 0.4rem 1.4rem;
+    border-radius: 40px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #7c521f;
+    margin-bottom: 2rem;
+    box-shadow: inset 0 1px 2px #fff9, 0 3px 6px #0001;
+}
+
+/* Timer Grid */
+.timer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+    margin: 1.2rem 0 1.8rem;
+}
+
+.time-block {
+    background: #ffffffea;
+    border-radius: 2rem;
+    padding: 1rem 1.2rem;
+    min-width: 105px;
+    box-shadow: 0 18px 30px -12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffe6c1;
+    transition: transform 0.2s;
+}
+
+.time-block:hover {
+    transform: translateY(-5px);
+}
+
+.time-number {
+    font-size: 3.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #43341c, #a4682c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.time-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ac874c;
+    margin-top: 0.4rem;
+}
+
+.celebration-message {
+    background: #fff5e6;
+    border-radius: 50px;
+    padding: 0.9rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1.5rem 0 1.2rem;
+    display: inline-block;
+    color: #c4622a;
+    border-left: 5px solid #f4ac5d;
+    border-right: 5px solid #f4ac5d;
+    backdrop-filter: blur(2px);
+    transition: all 0.3s ease;
+}
+
+button {
+    background: linear-gradient(105deg, #ffdfaa, #ffcf8a);
+    border: none;
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 80px;
+    color: #4d3217;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0.5rem 0 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 6px 12px -6px rgba(0,0,0,0.2);
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    background: linear-gradient(105deg, #ffd89a, #ffc172);
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px -3px rgba(0,0,0,0.2);
+}
+
+.extra-note {
+    font-size: 0.8rem;
+    color: #b68441;
+    background: #fff7e9;
+    padding: 0.45rem 1rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0.2rem auto;
+}
+
+.kategori-grid {
+    background: rgba(255, 255, 245, 0.96);
+    backdrop-filter: blur(2px);
+    border-radius: 3rem;
+    padding: 2rem 2rem 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 215, 150, 0.6);
+}
+
+.kategori-grid h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    background: linear-gradient(120deg, #bb5b2c, #e58e3a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.3rem;
+}
+
+.kategori-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+    margin: 1.8rem 0 0.8rem;
+}
+
+.kategori-chip {
+    background: white;
+    padding: 0.7rem 1.6rem;
+    border-radius: 60px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 6px 12px -8px rgba(0,0,0,0.1);
+    border: 1px solid #ffe2b5;
+    color: #5a3e1f;
+}
+
+.kategori-chip i {
+    font-size: 1.3rem;
+    font-style: normal;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+    margin: 1.8rem 0 0.8rem;
+}
+
+.foward-button {
+    display: inline-flex;
+	position: center;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(105deg, #ffdfaa, #ffcf8a);
+	border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 80px;
+    color: #4d3217;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.foward-button:hover {
+	transform: translateY(-5px);
+	background: linear-gradient(105deg, #ffd89a, #ffc172);
+}
+
+footer {
+    margin-top: 1.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #be904f;
+    border-top: 1px solid #ffe0b7;
+    padding-top: 1.2rem;
+    letter-spacing: 0.3px;
+}
+
+/* responsive refinements */
+@media (max-width: 700px) {
+    body {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .timer-grid {
+        gap: 0.9rem;
+    }
+    .time-block {
+        min-width: 70px;
+        padding: 0.7rem 0.5rem;
+    }
+    .time-number {
+        font-size: 2.2rem;
+    }
+    .countdown-card h2 {
+        font-size: 1.5rem;
+    }
+    .info-chip {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+    .map-container {
+        padding-bottom: 65%;
+    }
+    .event-spotlight {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .time-number {
+        font-size: 1.9rem;
+    }
+    .time-block {
+        min-width: 60px;
+    }
+    .celebration-message {
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
+    }
+    button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* animation for subtle glow effect on countdown */
+@keyframes softPulse {
+    0% { opacity: 0.7; text-shadow: 0 0 0px #ffb86b;}
+    100% { opacity: 1; text-shadow: 0 0 3px #ffd58c;}
+}
+
+.countdown-message {
+    transition: all 0.25s;
+}
+
+/* additional polish for touch */
+button:active {
+    transform: scale(0.96);
+}
